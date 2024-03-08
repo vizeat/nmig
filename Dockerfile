@@ -12,7 +12,4 @@ COPY . .
 # Install dependencies, and build
 RUN npm install && npm run build
 
-# Expose default PostgreSQL and MySQL ports
-EXPOSE 5432
-EXPOSE 3306
-
+ENTRYPOINT npm start
